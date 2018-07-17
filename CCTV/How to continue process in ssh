@@ -1,6 +1,0 @@
-ssh [server]
-command
-CTRL+Z
-bg
-disown
-exit

@@ -1,6 +1,6 @@
 import HomeTV
 import sys
-'''
+
 if len(sys.argv) >= 3:
     server_ip = sys.argv[1]
     channel = int(sys.argv[2])
@@ -21,7 +21,6 @@ elif len(sys.argv) >= 1:
     print "lkie : python cctv.py <serv ip> <channel> "
     print "Now excute : python tv.py localhost 0"
 
-'''
 
-stv = HomeTV.SimCCTV("64.137.189.244",19201,0)
+stv = HomeTV.SimCCTV(server_ip,19201,0)
 stv.run(0)
